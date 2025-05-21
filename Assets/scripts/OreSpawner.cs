@@ -19,6 +19,11 @@ public class OreSpawner : MonoBehaviour
     }
 
 
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(gameObject.transform.position, 2f);
+    }
+
 
     private void Update()
     {
